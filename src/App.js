@@ -13,7 +13,6 @@ import Footer from './Componenet/Footer';
 import './Componenet/Style/AllCss.css'
 
 
-
 function App() {
   return (
     <>
