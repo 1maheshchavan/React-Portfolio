@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const Home = () => {
   return (
@@ -15,7 +17,7 @@ const Home = () => {
         <div className="socials">
           <ul className="social-icons">
             <li>
-              <a className="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/mahesh-chavan-2a6b99249"
+              <a  className="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/mahesh-chavan-2a6b99249"
                 target="_blank" rel="noreferrer">
                 <i className="fab fa-linkedin"></i>
               </a>

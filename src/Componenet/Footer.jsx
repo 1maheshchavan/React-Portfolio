@@ -1,16 +1,7 @@
 import React from 'react';
 
 const Footer = () => {
-  const gmailUrl = () => {
-    const emailSubject = encodeURIComponent('Hello');
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=&su=${emailSubject}`;
-
-    return (
-      <a href={gmailUrl} target="_blank" rel="noopener noreferrer">
-        Open Gmail
-      </a>
-    );
-  };
+  
 
   return (
     <section className="footer">
@@ -33,8 +24,7 @@ const Footer = () => {
         <div className="box">
           <h3>contact info</h3>
           <p><a href="tel:8180819246"><i className="fas fa-phone"></i> +91 8180819246</a></p>
-          {/* Use the GmailLink component */}
-          {gmailUrl()}
+          <p><a>maheshchavan9246@gmail.com</a></p>
           <p><i className="fas fa-map-marked-alt"></i> Pune, Maharashtra - 411001</p>
         </div>
       </div>
