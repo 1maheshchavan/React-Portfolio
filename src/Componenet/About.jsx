@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserAlt, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
-import resume from './Mahesh Chavan Resume.pdf';
+import resume from './Mahesh_Chavan_Resume.pdf';
 
 const AboutMe = () => {
   let whatsappMessage = "https://wa.me/8180819246?";

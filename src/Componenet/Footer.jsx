@@ -1,8 +1,9 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope, faMapMarkedAlt, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub, faTelegramPlane, faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-  
-
   return (
     <section className="footer">
       <div className="box-container">
@@ -13,19 +14,19 @@ const Footer = () => {
         </div>
         <div className="box">
           <h3 style={{ color: 'yellow' }}>quick links</h3>
-          <a href="#home"><i className="fas fa-chevron-circle-right"></i> Home</a>
-          <a href="#about"><i className="fas fa-chevron-circle-right"></i> About</a>
-          <a href="#skills"><i className="fas fa-chevron-circle-right"></i> Skills</a>
-          <a href="#ProfessionalExperience"><i className="fas fa-chevron-circle-right"></i> Professional Experience</a>
-          <a href="#Certified"><i className="fas fa-chevron-circle-right"></i> Certified</a>
-          <a href="#education"><i className="fas fa-chevron-circle-right"></i> Education</a>
-          <a href="#projects"><i className="fas fa-chevron-circle-right"></i> Projects</a>
+          <a href="#home"><FontAwesomeIcon icon={faChevronCircleRight} /> Home</a>
+          <a href="#about"><FontAwesomeIcon icon={faChevronCircleRight} /> About</a>
+          <a href="#skills"><FontAwesomeIcon icon={faChevronCircleRight} /> Skills</a>
+          <a href="#ProfessionalExperience"><FontAwesomeIcon icon={faChevronCircleRight} /> Professional Experience</a>
+          <a href="#Certified"><FontAwesomeIcon icon={faChevronCircleRight} /> Certified</a>
+          <a href="#education"><FontAwesomeIcon icon={faChevronCircleRight} /> Education</a>
+          <a href="#projects"><FontAwesomeIcon icon={faChevronCircleRight} /> Projects</a>
         </div>
         <div className="box">
           <h3>contact info</h3>
-          <p><a href="tel:8180819246"><i className="fas fa-phone"></i> +91 8180819246</a></p>
-          <p><a>maheshchavan9246@gmail.com</a></p>
-          <p><i className="fas fa-map-marked-alt"></i> Pune, Maharashtra - 411001</p>
+          <p><a href="tel:8180819246"><FontAwesomeIcon icon={faPhone} /> +91 8180819246</a></p>
+          <p><a href="mailto:maheshchavan9246@gmail.com"><FontAwesomeIcon icon={faEnvelope} /> maheshchavan9246@gmail.com</a></p>
+          <p><FontAwesomeIcon icon={faMapMarkedAlt} /> Pune, Maharashtra - 411001</p>
         </div>
       </div>
 
@@ -33,13 +34,13 @@ const Footer = () => {
         <div className="box">
           <div className="share">
             <p className="social-links">
-              <a href="https://www.linkedin.com/in/mahesh-chavan-2a6b99249" className="fab fa-linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"></a>
-              <a href="https://github.com/1maheshchavan" className="fab fa-github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"></a>
-              <a href="mailto:maheshchavan9246@gmail.com" className="fas fa-envelope" aria-label="Mail"></a>
-              <a href="@Mahesh46" className="fab fa-telegram-plane" aria-label="Telegram" target="_blank" rel="noopener noreferrer"></a>
-              <a href="https://instagram.com/mahesh_chavan___?igshid=MzRlODBiNWFlZA==" className="fab fa-instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer"></a>
-              <a href="https://www.facebook.com/profile.php?id=100023686989872" className="fab fa-facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer"></a>
-              <a href="https://youtube.com/@maheshchavan9246" className="fab fa-youtube" aria-label="YouTube" target="_blank" rel="noopener noreferrer"></a>
+              <a href="https://www.linkedin.com/in/mahesh-chavan-2a6b99249" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
+              <a href="https://github.com/1maheshchavan" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+              <a href="mailto:maheshchavan9246@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
+              <a href="https://t.me/Mahesh46" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTelegramPlane} /></a>
+              <a href="https://instagram.com/mahesh_chavan___?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
+              <a href="https://www.facebook.com/profile.php?id=100023686989872" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
+              <a href="https://youtube.com/@maheshchavan9246" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} /></a>
             </p>
           </div>
         </div>

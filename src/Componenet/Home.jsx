@@ -1,44 +1,64 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub, faInstagram,} from '@fortawesome/free-brands-svg-icons';
 
 const Home = () => {
+
+
   return (
     <section className="home" id="home">
-      <div className="heading">
-      </div>
       <div className="content">
-        <h2>Hii,<br />I'm <span>Mahesh</span> Chavan</h2>
-        <p>i am into ~ Full Stack Developer<br /><span className="typing-text"></span></p>
+        <h2>
+          <br />I'm , <span>Mahesh</span> Chavan
+        </h2>
+    
+        <p>
+          i am into ~ <br />
+          <span className="typing-text"> {"Full Stack Developer"}</span>
+        </p>
         <a href="#about" className="btn">
           <span>About Me</span>
-          <i className="fas fa-arrow-circle-down"></i>
         </a>
         <div className="socials">
           <ul className="social-icons">
             <li>
-              <a  className="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/mahesh-chavan-2a6b99249"
-                target="_blank" rel="noreferrer">
-                <i className="fab fa-linkedin"></i>
+              <a
+                className="linkedin"
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/mahesh-chavan-2a6b99249"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <a href="https://www.linkedin.com/in/mahesh-chavan-2a6b99249" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
               </a>
             </li>
             <li>
-              <a className="github" aria-label="GitHub" href="https://github.com/1maheshchavan" target="_blank" rel="noreferrer">
-                <i className="fab fa-github"></i>
+              <a
+                className="github"
+                aria-label="GitHub"
+                href="https://github.com/1maheshchavan"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <a href="https://github.com/1maheshchavan" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
               </a>
             </li>
             <li>
-              <a className="instagram" aria-label="Instagram"
-                href="https://instagram.com/mahesh_chavan___?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noreferrer">
-                <i className="fab fa-instagram"></i>
+              <a
+                className="instagram"
+                aria-label="Instagram"
+                href="https://instagram.com/mahesh_chavan___?igshid=MzRlODBiNWFlZA=="
+                target="_blank"
+                rel="noreferrer"
+              >
+                 <a href="https://instagram.com/mahesh_chavan___?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
               </a>
             </li>
-            <li>
-              <a className="dev" aria-label="facebook" href="https://www.facebook.com/profile.php?id=100023686989872"
-                target="_blank" rel="noreferrer">
-                <i className="fab fa-facebook"></i>
-              </a>
-            </li>
+        
+             
+      <a href="mailto:maheshchavan9246@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
+
           </ul>
         </div>
       </div>

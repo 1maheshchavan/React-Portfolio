@@ -1,4 +1,4 @@
-  * {
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,20 +6,46 @@
     outline: none;
     border: none;
     text-transform: capitalize;
-    transition: all 0.2s linear;
-  
-  
+    transition: all 0.2s linear;  
   }
+
   .logo-hea {
-    margin-left: 0;
-    color: #4f6700;
-    /* background-color: #00d9ff; */
-    font-family:
-    Gill Sans Extrabold,
-    sans-serif;    border-radius: 8px;
-    padding: 5px;
+    font-size: 1em;
+    color: #3498db;
+    margin: 20px 0;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    overflow: hidden;
   }
-  
+
+  .logo-hea:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #3498db, #e74c3c);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+
+  .logo-hea:hover {
+    color: #fff;
+  }
+
+  .logo-hea:hover:before {
+    opacity: 1;
+  }
+
   html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -89,6 +115,7 @@
     min-height: 100vh;
     padding: 2rem 9%;
   }
+  
   
   .heading {
     font-size: 3.6rem;
@@ -232,21 +259,40 @@
     height: 100%;
     width: 100%;
   }
+
+  p {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+  }
+
+  .typing-text::after {
+    content: '|';
+    display: inline-block;
+    animation: blink-caret 0.75s infinite;
+  }
+
+  @keyframes blink-caret {
+    50% {
+      opacity: 0;
+    }
+  }
+
   
   .home::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    height: 30%;
+    width: 96%;
   }
   
   .home .content {
     flex: 1 1 40rem;
     padding-top: -50px;
     z-index: 1;
-    margin-top: -55px;
+    margin-top: -200px;
     margin-left: 1px;
   }
   
@@ -628,7 +674,6 @@
     margin-left: 0.5rem;
   }
   
-  /* skills media queries starts*/
   @media screen and (max-width: 600px) {
     .skills .container {
       padding: 0;
@@ -844,13 +889,13 @@
   
   
   #home {
-    height: 500px;
+    height: 700px;
     width: 100%;
-    margin-top: 63px;
-    margin-left: 10px;
-    padding-left: 845px;
+    margin-top: 50px;
+    margin-left: 0px;
+    padding-left: 855px;
     background-image: url("C:\Desktop\React-Portfolio\src\mahesh.jpg");
-    background-size: 70% 100%;
+    background-size: 100% 90%;
     background-repeat: no-repeat;
     margin-left: auto;
   
@@ -869,6 +914,8 @@
   .Codess{
     height: 100px;
   }
+
+  
 
  
   hr{
@@ -1067,10 +1114,7 @@
     transform: translateX(5px);
   }
   
-  /* work section ends */
-  
-  /* experience section starts */
-  .experience .timeline {
+   .experience .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
@@ -1121,7 +1165,6 @@
     left: 50%;
   }
   
-  /* arrows pointing right */
   .experience .left::before {
     content: " ";
     height: 0;
@@ -1423,7 +1466,6 @@
     left: 8px;
   }
   
-  /* contact section media queries starts */
   @media (max-width: 900px) {
     .contact {
       min-height: 70vh;
@@ -1636,7 +1678,7 @@
     flex-wrap: wrap;
   }
   
-  .box-container-2 {
+ .box-container-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
