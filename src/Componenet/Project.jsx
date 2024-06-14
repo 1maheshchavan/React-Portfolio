@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'; 
-import Portfolioo from './Images/Portfolioo.jpg'
+import Portfolioo from './Images/work sample.jpg'
 
 const Project = () => {
   return (

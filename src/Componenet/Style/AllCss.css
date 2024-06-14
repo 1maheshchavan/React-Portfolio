@@ -1,13 +1,13 @@
-   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    text-transform: capitalize;
-    transition: all 0.2s linear;  
-  }
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
 
   .logo-hea {
     font-size: 1em;
@@ -702,7 +702,17 @@
     text-align: center;
   }
   
-  
+ 
+@media (max-width: 768px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .Certificate {
+    font-size: 14px;
+  }
+}
+
   
   #heading {
     font-size: 40px;
@@ -720,12 +730,12 @@
     border-radius: 10px;
     margin-left: 250px;
     margin-right: 250px;
-    background-color: #abaca0;
+    background-color: #f1eded;
   
   }
   
   .intern:hover {
-    color: #920b0b;
+    color: #473f3f;
   }
   
   #Certified {
@@ -894,7 +904,7 @@
     margin-top: 50px;
     margin-left: 0px;
     padding-left: 855px;
-    background-image: url("C:\Desktop\React-Portfolio\src\mahesh.jpg");
+    background-image: url("../Images/mahesh.jpg");
     background-size: 100% 90%;
     background-repeat: no-repeat;
     margin-left: auto;
@@ -972,8 +982,9 @@
   
   
   #home2 {
-    margin-top: 50px;
-    height: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 350px;
     border: 1px solid black;
   }
   
